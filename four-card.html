@@ -13,16 +13,23 @@
       --red-color: rgb(230,58,80);
       --yellow-color: rgb(255,218,44);
       --blue-color: rgb(84,158,242);
+      --dark-dark-blue-color: rgb(76,78,96);
     }
     body {
       font-family: Arial;
     }
 
     body,
+    h1
     h2,
     h3, 
     p {
       margin: 0rem;
+    }
+
+    #realty-description {
+      margin-top: 1rem;
+
     }
 
     .container {
@@ -38,7 +45,7 @@
     }
 
     .box {
-      padding: 1.5rem 1rem 1.5rem 1rem;
+      padding: 1.5rem 1.5rem 4rem 1.5rem;
 
       border-top-style: solid;
       border-radius: 0.3rem;
@@ -63,14 +70,27 @@
     #money-box {
       border-top-color: var(--blue-color);
     }
+
+    .margin-bottom {
+      margin-bottom: 0.5rem;
+    }
+
+    .box-paragraph {
+      color: var(--dark-dark-blue-color);
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+    }
   </style>
 
 </head>
 <body>
   <header>
     <div class="container">
-      <h2 class="text-align-center">Burning Tree Realty</h2>
-      <h3 class="text-align-center">Trusted Realty in Orange County</h2>
+      <h1 class="text-align-center">Burning Tree Realty</h2>
+      <h2 id="realty-description" class="text-align-center">Trusted Realty in Orange County</h2>
       <p class="text-align-center">We can ensure four things to our customers!</p>
     </div>
   </header>
@@ -78,26 +98,26 @@
   <main>
     <div class="container">
       <div id="top-quality-box" class="box">
-        <h2>Top Quality</h2>
-        <p>We constantly look everywhere for the best homes for the best prices.</p>
+        <h2 class="margin-bottom">Top Quality</h2>
+        <p class="margin-bottom box-paragraph">We constantly look everywhere for the best homes for the best prices.</p>
         <img src="images/magnifyingglass.svg">
       </div>
 
       <div id="remodeling-box" class="box">
-        <h2>Remodeling</h2>
-        <p>We can make your home look brand new for low prices!</p>
+        <h2 class="margin-bottom">Remodeling</h2>
+        <p class="margin-bottom box-paragraph">We can make your home look brand new for low prices!</p>
         <img src="images/house.svg">
       </div>
 
       <div id="talent-box" class="box">
-        <h2>Talent</h2>
-        <p>We provide our best real estate agents!</p>
+        <h2 class="margin-bottom">Talent</h2>
+        <p class="margin-bottom box-paragraph">We provide our best real estate agents!</p>
         <img src="images/lightbulb.svg">
       </div>
 
       <div id="money-box" class="box">
-        <h2>Saving your Money</h2>
-        <p>We have various methods to save up to $100,000 for our customers.</p>
+        <h2 class="margin-bottom">Saving your Money</h2>
+        <p class="margin-bottom box-paragraph">We have various methods to save up to $100,000 for our customers.</p>
         <img src="images/calculator.svg">
       </div>
     </div>
