@@ -83,6 +83,21 @@
       display: block;
       margin-left: auto;
     }
+
+    @media screen and (min-width: 46.875rem) /*750px*/ {
+      .main-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 700px;
+      }
+
+      .main-container > * {
+        width: 325px;
+      }
+    }
+
+
   </style>
 
 </head>
@@ -96,30 +111,35 @@
   </header>
 
   <main>
-    <div class="container">
-      <div id="top-quality-box" class="box">
-        <h2 class="margin-bottom">Top Quality</h2>
-        <p class="margin-bottom box-paragraph">We constantly look everywhere for the best homes for the best prices.</p>
-        <img src="images/magnifyingglass.svg">
-      </div>
+    <div class="container main-container">
+      <section class="46.875rem-section">
+        <div id="top-quality-box" class="box">
+          <h2 class="margin-bottom">Top Quality</h2>
+          <p class="margin-bottom box-paragraph">We constantly look everywhere for the best homes for the best prices.</p>
+          <img src="images/magnifyingglass.svg">
+        </div>
+  
+        <div id="remodeling-box" class="box">
+          <h2 class="margin-bottom">Remodeling</h2>
+          <p class="margin-bottom box-paragraph">We can make your home look brand new for low prices!</p>
+          <img src="images/house.svg">
+        </div>
+      </section>
 
-      <div id="remodeling-box" class="box">
-        <h2 class="margin-bottom">Remodeling</h2>
-        <p class="margin-bottom box-paragraph">We can make your home look brand new for low prices!</p>
-        <img src="images/house.svg">
-      </div>
+      <section class="46.875rem-section">
+        <div id="talent-box" class="box">
+          <h2 class="margin-bottom">Talent</h2>
+          <p class="margin-bottom box-paragraph">We provide our best real estate agents!</p>
+          <img src="images/lightbulb.svg">
+        </div>
+  
+        <div id="money-box" class="box">
+          <h2 class="margin-bottom">Saving your Money</h2>
+          <p class="margin-bottom box-paragraph">We have various methods to save up to $100,000 for our customers.</p>
+          <img src="images/calculator.svg">
+        </div>
+      </section>
 
-      <div id="talent-box" class="box">
-        <h2 class="margin-bottom">Talent</h2>
-        <p class="margin-bottom box-paragraph">We provide our best real estate agents!</p>
-        <img src="images/lightbulb.svg">
-      </div>
-
-      <div id="money-box" class="box">
-        <h2 class="margin-bottom">Saving your Money</h2>
-        <p class="margin-bottom box-paragraph">We have various methods to save up to $100,000 for our customers.</p>
-        <img src="images/calculator.svg">
-      </div>
     </div>
   </main>
 </body>
