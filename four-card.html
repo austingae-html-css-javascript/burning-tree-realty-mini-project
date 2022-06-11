@@ -92,8 +92,23 @@
         width: 700px;
       }
 
-      .main-container > * {
+      .main-container > .middle-size-version-section {
         width: 325px;
+      }
+    }
+
+    @media screen and (min-width: 93.75rem) /*1500px*/ {
+      .main-container {
+        /*.main-container already has display: flex*/
+        width: 1400px;
+      }
+
+      .main-container > .middle-size-version-section {
+        display: contents; /*ignore <section class="middle-size-version-section"> but displays the .middle-size-version-section content*/
+      }
+
+      .main-container > .middle-size-version-section > .box {
+        width: 277px;
       }
     }
 
@@ -112,7 +127,7 @@
 
   <main>
     <div class="container main-container">
-      <section class="46.875rem-section">
+      <section class="middle-size-version-section">
         <div id="top-quality-box" class="box">
           <h2 class="margin-bottom">Top Quality</h2>
           <p class="margin-bottom box-paragraph">We constantly look everywhere for the best homes for the best prices.</p>
@@ -126,7 +141,7 @@
         </div>
       </section>
 
-      <section class="46.875rem-section">
+      <section class="middle-size-version-section">
         <div id="talent-box" class="box">
           <h2 class="margin-bottom">Talent</h2>
           <p class="margin-bottom box-paragraph">We provide our best real estate agents!</p>
