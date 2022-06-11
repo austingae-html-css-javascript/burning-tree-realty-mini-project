@@ -1,0 +1,103 @@
+:root {
+  --turquoise-color: rgb(0,200,200);
+  --red-color: rgb(230,58,80);
+  --yellow-color: rgb(255,218,44);
+  --blue-color: rgb(84,158,242);
+  --dark-dark-blue-color: rgb(76,78,96);
+}
+body {
+  font-family: Arial;
+}
+
+body,
+h1
+h2,
+h3, 
+p {
+  margin: 0rem;
+}
+
+#realty-description {
+  margin-top: 1rem;
+
+}
+
+.container {
+  width: 20.3125rem;
+  margin: 0rem auto 0rem auto;
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.box {
+  padding: 1.5rem 1.5rem 4rem 1.5rem;
+
+  border-top-style: solid;
+  border-radius: 0.3rem;
+  border-top-width: 0.5rem;
+  box-shadow:  rgb(163, 165, 174) 0px 15px 30px 3px;
+
+  margin-bottom: 3.5rem;
+}
+
+#top-quality-box {
+  border-top-color: var(--turquoise-color);
+}
+
+#remodeling-box {
+  border-top-color: var(--red-color);
+}
+
+#talent-box {
+  border-top-color: var(--yellow-color);
+}
+
+#money-box {
+  border-top-color: var(--blue-color);
+}
+
+.margin-bottom {
+  margin-bottom: 0.5rem;
+}
+
+.box-paragraph {
+  color: var(--dark-dark-blue-color);
+}
+
+img {
+  display: block;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 46.875rem) /*750px*/ {
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 700px;
+  }
+
+  .main-container > .middle-size-version-section {
+    width: 325px;
+  }
+}
+
+@media screen and (min-width: 93.75rem) /*1500px*/ {
+  .main-container {
+    /*.main-container already has display: flex*/
+    width: 1400px;
+  }
+
+  .main-container > .middle-size-version-section {
+    display: contents; /*ignore <section class="middle-size-version-section"> but displays the .middle-size-version-section content*/
+  }
+
+  .main-container > .middle-size-version-section > .box {
+    width: 277px;
+  }
+}
