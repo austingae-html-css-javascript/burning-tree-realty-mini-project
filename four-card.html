@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burning Tree Realty</title>
+
+  <style>
+
+    :root {
+      --turquoise-color: rgb(0,200,200);
+      --red-color: rgb(230,58,80);
+      --yellow-color: rgb(255,218,44);
+      --blue-color: rgb(84,158,242);
+    }
+    body {
+      font-family: Arial;
+    }
+
+    body,
+    h2,
+    h3, 
+    p {
+      margin: 0rem;
+    }
+
+    .container {
+      width: 20.3125rem;
+      margin: 0rem auto 0rem auto;
+
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .text-align-center {
+      text-align: center;
+    }
+
+    .box {
+      padding: 1.5rem 1rem 1.5rem 1rem;
+
+      border-top-style: solid;
+      border-radius: 0.3rem;
+      border-top-width: 0.5rem;
+      box-shadow:  rgb(163, 165, 174) 0px 15px 30px 3px;
+
+      margin-bottom: 3.5rem;
+    }
+
+    #top-quality-box {
+      border-top-color: var(--turquoise-color);
+    }
+
+    #remodeling-box {
+      border-top-color: var(--red-color);
+    }
+
+    #talent-box {
+      border-top-color: var(--yellow-color);
+    }
+
+    #money-box {
+      border-top-color: var(--blue-color);
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h2 class="text-align-center">Burning Tree Realty</h2>
+      <h3 class="text-align-center">Trusted Realty in Orange County</h2>
+      <p class="text-align-center">We can ensure four things to our customers!</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div id="top-quality-box" class="box">
+        <h2>Top Quality</h2>
+        <p>We constantly look everywhere for the best homes for the best prices.</p>
+        <img src="images/magnifyingglass.svg">
+      </div>
+
+      <div id="remodeling-box" class="box">
+        <h2>Remodeling</h2>
+        <p>We can make your home look brand new for low prices!</p>
+        <img src="images/house.svg">
+      </div>
+
+      <div id="talent-box" class="box">
+        <h2>Talent</h2>
+        <p>We provide our best real estate agents!</p>
+        <img src="images/lightbulb.svg">
+      </div>
+
+      <div id="money-box" class="box">
+        <h2>Saving your Money</h2>
+        <p>We have various methods to save up to $100,000 for our customers.</p>
+        <img src="images/calculator.svg">
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+
+<!--
+  Mobile First Approach
+  1) create the HTML layout - yes.
+  2) create the HTML elements - yes. 
+  3) decorate the HTML elements in CSS and separate them
+-->
